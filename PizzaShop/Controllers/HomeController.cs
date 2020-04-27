@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PizzaShop.Models;
 
+//Test comment - Wei
+
 namespace PizzaShop.Controllers
 {
     public class HomeController : Controller
