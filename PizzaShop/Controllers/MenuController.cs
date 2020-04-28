@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PizzaShop.Controllers
 {
-    public class FactoryController : Controller
+    public class MenuController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
     }
-}//test
+}
