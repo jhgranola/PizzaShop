@@ -1,0 +1,204 @@
+@import url('https://getbootstrap.com/dist/css/bootstrap.css');
+
+/*Roboto Font*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,100italic,100,400italic,500,500italic,700,700italic,900,900italic);
+
+body {
+    padding-top: 75px;
+    overflow: scroll;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.header {
+    height: 75px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    border-top: 20px solid orange;
+    border-bottom: 1px solid #ccc;
+}
+
+.row-header {
+    overflow: hidden;
+}
+
+.header-left {
+    float: left;
+}
+
+.brand-name {
+    height: 53px;
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+    .brand-name img {
+        max-height: 37px;
+    }
+
+.header-right {
+    display: block;
+    margin-left: 220px;
+}
+
+.menu-items-wrap {
+    padding: 10px 18px;
+    overflow: hidden;
+}
+
+.logo-product {
+    float: right;
+    width: 100px;
+    text-align: right;
+    height: 35px;
+}
+
+    .logo-product img {
+        max-height: 35px;
+    }
+
+.menu-items {
+    display: block;
+    margin-right: 100px;
+    text-align: left;
+}
+
+    .menu-items ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .menu-items ul li {
+            padding: 0px 0px;
+            display: inline-block;
+        }
+
+            .menu-items ul li a {
+                display: block;
+                text-align: center;
+                color: #999;
+                font-size: 14px;
+                text-decoration: none;
+            }
+
+            .menu-items ul li.selected a,
+            .menu-items ul li:hover a {
+                color: orange;
+            }
+
+            .menu-items ul li.separator {
+                width: 1px;
+                height: 34px;
+                background-color: #e4e4e4;
+                margin: 0 15px;
+            }
+
+.mitem {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: block;
+    margin: 0 auto;
+}
+
+.content-wrap {
+    width: 100%;
+    min-width: 1100px;
+    z-index: 1;
+    top: 75px;
+}
+
+.content-inner {
+    width: 100%;
+    display: table;
+}
+
+.row-body {
+    display: table-row;
+    width: 100%;
+    min-width: 1100px;
+}
+
+.navigation {
+    position: absolute;
+    top: 75px;
+    width: 220px;
+}
+
+    .navigation ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+        .navigation ul li {
+            padding: 0;
+            background-color: #fff;
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+            padding: 0px 2px;
+        }
+
+            .navigation ul li:hover {
+                background-color: #f4f4f4;
+            }
+
+            .navigation ul li a {
+                text-decoration: none;
+                font-weight: 600;
+                color: #555;
+                background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_right_48px-20.png) right center no-repeat;
+                display: block;
+                padding: 15px 13px;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            .navigation ul li:hover a {
+                color: #337ab7;
+            }
+
+.left-side {
+    background-color: #fff;
+    float: none;
+    display: table-cell;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+
+.right-side {
+    background-color: #fff;
+    float: none;
+    display: table-cell;
+    height: 700px;
+    overflow: auto;
+    border-left: 1px solid #ccc;
+}
+
+.main-content-wrap {
+    padding: 15px;
+}
+
+.col-3 {
+    width: 220px;
+}
+
+.col-9 {
+    width: auto;
+}
+
+.footer {
+    height: 35px;
+    border-top: 1px solid #ccc;
+}
