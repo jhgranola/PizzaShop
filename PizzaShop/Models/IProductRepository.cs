@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PizzaShop.Models
 {
-    public class IProductRepository
+    public interface IProductRepository
     {
         IQueryable<Product> Products { get; }
     }
