@@ -14,9 +14,9 @@ namespace PizzaShop.Controllers
         {
             repository = repo;
         }
-        public IActionResult Index(Product products)
+        public IActionResult Index()
         {
-            return View();
+            return View(repository.Products);
         }
     }
 }
