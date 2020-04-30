@@ -8,7 +8,17 @@ namespace PizzaShop.Controllers
 {
     public class OrderController : Controller
     {
-        public IActionResult Index()
+        public IActionResult List()
+        {
+            return View();
+        }
+
+        public IActionResult Completed()
+        {
+            return View();
+        }
+
+        public IActionResult Checkout()
         {
             return View();
         }
