@@ -26,9 +26,5 @@ namespace PizzaShop.Models
         public string ZipCode { get; set; }
         [Required(ErrorMessage = "Please enter a country name")]
         public string Country { get; set; }
-
-
-    
-
     }
 }

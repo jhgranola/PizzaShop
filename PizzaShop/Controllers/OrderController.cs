@@ -8,6 +8,13 @@ namespace PizzaShop.Controllers
 {
     public class OrderController : Controller
     {
+        private IOrderRepository repository;
+
+        public OrderController(IOrderRepository repoService)
+        {
+            repository = repoService;
+        }
+
         public IActionResult List()
         {
             return View();
