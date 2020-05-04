@@ -13,7 +13,7 @@ namespace PizzaShop.Models
         {
             PizzaShopDbContext context = app.ApplicationServices.GetRequiredService<PizzaShopDbContext>();
 
-            context.Database.Migrate();
+            //context.Database.Migrate();
 
             //PizzaShopDbContext context = services.GetRequiredService<PizzaShopDbContext>();
 
