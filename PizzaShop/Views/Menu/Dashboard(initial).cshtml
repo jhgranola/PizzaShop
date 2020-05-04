@@ -113,34 +113,12 @@
 
                 <!-- Main Contetn Wrap: begins -->
                 <div class="main-content-wrap">
-
-                    <p>Meat Lovers</p>
-                    <p>The Angry Californian(Jonesy)</p>
-                    <p>The Happy Texan</p>
-                    <p>Hawaiian</p>
-                    <p>Hawaiian Supreme</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
+                    @foreach(var item in Model)
+                    {
+                    @item.Name
+                    @item.Price
+                    @item.Descrption
+                    }
                 </div>
                 <!-- Main Contetn Wrap: ends -->
 
