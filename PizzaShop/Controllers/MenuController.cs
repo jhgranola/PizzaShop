@@ -16,7 +16,7 @@ namespace PizzaShop.Controllers
         }
         public IActionResult Index()
         {
-            return View(repository.Products);
+            return View("Dashboard(initial)",repository.Products);
         }
     }
 }
