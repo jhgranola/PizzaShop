@@ -10,8 +10,8 @@
         @foreach (Order o in Model)
         {
             <tr>
-                <td>@o.Name</td>
-                <td>@o.Zip</td>
+                <td>@o.CustomerName</td>
+                <td>@o.ZipCode</td>
                 <th>Product</th>
                 <th>Quantity</th>
                 <td>
@@ -23,7 +23,7 @@
                     </form>
                 </td>
             </tr>
-            @foreach (CartLine line in o.Lines)
+            @*@foreach (CartLine line in o.Lines)
             {
                 <tr>
                     <td colspan="2"></td>
@@ -31,7 +31,7 @@
                     <td>@line.Quantity</td>
                     <td></td>
                 </tr>
-            }
+            }*@
         }
     </table>
 }
