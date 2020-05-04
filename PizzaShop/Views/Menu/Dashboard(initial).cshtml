@@ -109,17 +109,19 @@
             </div>
             <!-- Left Side: ends -->
             <!-- Right Side: begins -->
-            <div class="col-9 right-side">
+            <table class="col-9 right-side">
 
                 <!-- Main Contetn Wrap: begins -->
-                <div class="main-content-wrap">
+                <table class="main-content-wrap">
                     @foreach(var item in Model)
                     {
-                    @item.Name
-                    @item.Price
-                    @item.Descrption
+                      <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Price</td>
+                        <td>@item.Description</td>
+                      </tr>
                     }
-                </div>
+                </table>
                 <!-- Main Contetn Wrap: ends -->
 
             </div>
