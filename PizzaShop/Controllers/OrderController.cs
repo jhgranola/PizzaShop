@@ -23,8 +23,6 @@ namespace PizzaShop.Controllers
             return View(context.Orders.Where(o => !o.Completed));
         }
 
-
-
         [HttpPost]
         public IActionResult MarkCompleted(int orderID)
         {
