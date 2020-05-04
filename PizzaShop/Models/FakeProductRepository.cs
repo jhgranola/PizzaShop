@@ -13,5 +13,10 @@ namespace PizzaShop.Models
             new Product {Name = "Mushroom Pizza", Price = 10.99M},
             new Product {Name = "Sausage Pizza", Price = 13.99M},
         }.AsQueryable<Product>();
+
+        public void SaveProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
