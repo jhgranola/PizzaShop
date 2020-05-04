@@ -13,6 +13,8 @@ namespace PizzaShop.Models
         public int OrderID { get; set; }
         //The status of the order, whether it is delivered.
         public bool Delivered { get; set; }
+        [BindNever]
+        public bool Shipped { get; set; }   
         public bool Completed { get; set; }
         [Required(ErrorMessage = "Please enter a name")]
         public string CustomerName { get; set; }
