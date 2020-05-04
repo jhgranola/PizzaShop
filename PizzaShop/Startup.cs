@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PizzaShop.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace PizzaShop
 {
@@ -24,6 +25,9 @@ namespace PizzaShop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<PizzaShopDbContext>(options =>
+                options.UseSqlServer(Configuration["Data:PizzaShop:ConnectionString"]));
+
             services.AddControllersWithViews();
             services.AddTransient<IProductRepository, FakeProductRepository>();
         }
