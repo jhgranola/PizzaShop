@@ -22,7 +22,8 @@ namespace PizzaShop.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Factory");
+            //return View();
         }
 
         public IActionResult Privacy()

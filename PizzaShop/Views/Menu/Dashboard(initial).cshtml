@@ -1,4 +1,5 @@
 ﻿<!-- Header: begins -->
+@model  IEnumerable<Product>
 <div class="header">
     <link href="Dashboard(initial).css" rel="stylesheet" />
     <link href="Dashboard(initial).js" rel="stylesheetJS" />
@@ -108,39 +109,19 @@
             </div>
             <!-- Left Side: ends -->
             <!-- Right Side: begins -->
-            <div class="col-9 right-side">
+            <table class="col-9 right-side">
 
                 <!-- Main Contetn Wrap: begins -->
-                <div class="main-content-wrap">
-
-                    <p>Meat Lovers</p>
-                    <p>The Angry Californian(Jonesy)</p>
-                    <p>The Happy Texan</p>
-                    <p>Hawaiian</p>
-                    <p>Hawaiian Supreme</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                    <p>sdfsdf</p>
-                </div>
+                <table class="main-content-wrap">
+                    @foreach(var item in Model)
+                    {
+                      <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Price</td>
+                        <td>@item.Description</td>
+                      </tr>
+                    }
+                </table>
                 <!-- Main Contetn Wrap: ends -->
 
             </div>
