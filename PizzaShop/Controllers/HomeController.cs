@@ -20,6 +20,7 @@ namespace PizzaShop.Controllers
             _logger = logger;
         }
 
+        //private readonly IProductRepository 
         public IActionResult Index()
         {
             return RedirectToAction("Index", "Factory");
