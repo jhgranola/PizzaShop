@@ -23,8 +23,8 @@ namespace PizzaShop.Controllers
         //private readonly IProductRepository 
         public IActionResult Index()
         {
-            return RedirectToAction("Index", "Factory");
-            //return View();
+            //return RedirectToAction("Index", "Factory");
+            return View();
         }
 
         public IActionResult Privacy()
