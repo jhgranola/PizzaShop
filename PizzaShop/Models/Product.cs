@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+
 
 namespace PizzaShop.Models
 {
     public class Product
     {
-
         public int ProductID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
