@@ -30,6 +30,8 @@ namespace PizzaShop
 
             services.AddControllersWithViews();
             services.AddTransient<IProductRepository, FakeProductRepository>();
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +49,7 @@ namespace PizzaShop
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

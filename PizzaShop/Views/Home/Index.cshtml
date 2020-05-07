@@ -4,10 +4,78 @@
     //Edit By Caleb
     //Test Marco
 }
+<style type="text/css">
+    body {
+        margin:0;
+        padding:0;
+    }
+    .section-1 {
+        background-image: url('/images/PizzaBackgroundHome.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        height: 500px;
+        margin-top: -18px;
+        left: 50%;
+        color:white;
+    }
 
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>test</p>
-        <p>Pizza Shop</p>
-    </div>
+    .section-2-divs{
+        float:left;
+        height:150px;
+        width:25%;
+        margin:45px;
+        text-align:center;
+    }
+    button{
+        width:150px;
+        height:50px;
+        background-color:snow;
+        border-radius:20px;
+        border: 2px solid;
+        margin:20px;
+    }
 
+    
+ 
+</style>
+<html>
+<body>
+
+    <section class="section-1">
+        <div class="text-center">
+            <h1>Welcome to the Pizza Shop!</h1>
+            <h5>Artisan pizza's for every occasion! </h5>
+            <button>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Menu" asp-action="Index">Order Now</a>
+            </button>
+
+            <button>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Menu" asp-action="Index">View Menu</a>
+            </button>
+            
+        </div>
+    </section>
+
+    <section class="section-2">
+        <div class="section-2-divs">
+            <img src="/images/PizzaChef.jpg" height="183" width="275">
+            <h4>Skillfully Crafted</h4>
+        </div>
+        <div class="section-2-divs">
+            <img src="/images/PizzaIngredientTN.jpg">
+            <h4>Qualtiy Ingredients</h4>
+        </div>
+        <div class="section-2-divs">
+            <img src="/images/Pizza1.jpg">
+            <h4>Award Winning</h4>
+        </div>
+    </section>
+    
+
+
+</body>
+</html>
+    

@@ -1,12 +1,14 @@
 @model  IEnumerable<Product>
-                <table class="main-content-wrap">
+                <table class="table table-bordered table-striped">
                     @foreach(var item in Model)
                     {
-                      <tr>
+                    <tr>
                         <td>@item.Name</td>
                         <td>@item.Price</td>
                         <td>@item.Description</td>
-                      </tr>
+                        <!-- <td><button>Add to Cart</button></td> -->
+
+                    </tr>
                     }
                 </table>
 <div class="footer">Footer</div>
