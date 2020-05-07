@@ -37,4 +37,5 @@ namespace PizzaShop.Controllers
         }
         public ViewResult Create() => View("Edit", new Product());
     }
+
 }
